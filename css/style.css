@@ -1,0 +1,151 @@
+/* Start Variables */
+:root {
+    --section-padding: 65px;
+    --border-size:5px;
+    --border-style: solid;
+    --border-radius:6px ;
+}
+  /* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:375px) and (max-width :992px){
+    .container {
+        width: 350px;
+        
+        }
+    main .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }    
+}
+/* Small */
+@media (min-width: 768px ) {
+    .container {
+    width: 550px;
+    
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1440px) {
+    .container {
+    width: 1400px;
+    }
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+/* End Global Rules */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* start header  */
+header {
+    text-align: center;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    
+}
+header .container p:first-of-type{
+    font-size: 30px;
+    font-weight: 400;
+    color:hsl(229, 6%, 66%) ;
+    margin-bottom: 5px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+header .container h1{
+    color: hsl(234, 12%, 34%);
+    margin-top: 0px;
+    
+}
+header .container p:last-of-type{
+    color:hsl(229, 6%, 66%) ;
+    line-height:1.2 ;
+    margin-top: 0%;
+}
+
+/* end header  */
+
+/* Start Main  */
+main .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .container section{
+    background-color: rgb(255, 255, 255);
+    margin-left: 30px;
+    padding: 25px;
+    width: 350px;
+    height: 220px;
+    box-shadow: 10px 5px 10px 5px rgb(218, 218, 218) ;
+    margin-bottom: 20px;
+}
+main .container section:first-of-type{
+    border-top: var(--border-size) var(--border-style) hsl(180, 62%, 55%);
+    border-radius: var(--border-radius);
+    min-width: 350px;
+}
+main .container  div section:nth-of-type(1){
+    border-top: var(--border-size) var(--border-style) hsl(0, 78%, 62%);
+    border-radius: var(--border-radius);
+    
+}
+main .container  div section:nth-of-type(2){
+    border-top: var(--border-size) var(--border-style) hsl(34, 97%, 64%);
+    border-radius: var(--border-radius);
+    
+}
+main .container section:last-of-type{
+    border-top: var(--border-size) var(--border-style) hsl(212, 86%, 64%);
+    border-radius: var(--border-radius);
+    min-width: 350px;
+}
+main .container section svg{
+    float: right;
+    margin-top: 20px;
+}
+main .container section h2{
+    color: hsl(234, 12%, 34%);
+    margin-top: 0px;
+    font-weight: 600;
+}
+main .container section p{
+    color:hsl(229, 6%, 66%) ;
+    font-size: 12px;
+    line-height:1.4 ;
+}
+/* End Main  */
+
+/* Start Footer  */
+footer{
+    padding-top: var(--section-padding);
+    padding-bottom: 20px;
+}
+/* End Footer  */
+
+
+
+
+
+
+
+
+
